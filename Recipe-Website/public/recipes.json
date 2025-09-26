@@ -3,9 +3,42 @@
     {
       "name": "Meatloaf",
       "type": "Dinner",
-      "ingredients": [],
+      "ingredients": [
+        "3 lbs. ground beef",
+        "1 cup celery, diced",
+        "1 cup onion, diced",
+        "3 eggs",
+        "1 cup milk",
+        "4 slices white bread"
+      ],
+      "optionalIngredients": ["barbeque sauce"],
       "cookTime": "1 Hour 30 Minutes",
-      "instructions": []
+      "instructions": [
+        "Mix ingredients",
+        "Divide the mixture in half and fill two loaf pans",
+        "Top with barbeque sauce",
+        "Place loaf pans on baking sheet lined with foil",
+        "Cook at 375° F for 1 hour 30 minutes"
+      ]
+    },
+    {
+      "name": "Cheesecake",
+      "type": "Dessert",
+      "ingredients": [
+        "1 graham cracker crust",
+        "1/2 cup sugar",
+        "2 packages cream cheese",
+        "2 eggs",
+        "vanilla"
+      ],
+      "cookTime": "1 Hour 30 Minutes",
+      "instructions": [
+        "Beat cream cheese, eggs, sugar, vanilla.",
+        "Pour into graham cracker crust",
+        "Preheat oven to 350° F",
+        "Cook for 40 minutes",
+        "Refrigerate"
+      ]
     }
   ]
 }

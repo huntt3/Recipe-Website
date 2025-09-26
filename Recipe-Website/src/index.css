@@ -1,68 +1,85 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
+/* Custom base styles */
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  font-family: "Georgia", "Times New Roman", serif;
+  background-color: #f9fafb;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+/* Print-specific styles for black and white printing */
+@media print {
+  * {
+    color: #000 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
   }
-  a:hover {
-    color: #747bff;
+
+  body {
+    font-size: 11pt !important;
+    line-height: 1.3 !important;
+    background: white !important;
+    margin: 0.5in !important;
   }
-  button {
-    background-color: #f9f9f9;
+
+  .no-print {
+    display: none !important;
+  }
+
+  .recipe-card {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    border: 1px solid #000 !important;
+    margin-bottom: 10pt !important;
+    padding: 8pt !important;
+  }
+
+  .recipe-detail {
+    page-break-before: always !important;
+    max-width: none !important;
+    width: 100% !important;
+  }
+
+  .recipe-detail:first-child {
+    page-break-before: auto !important;
+  }
+
+  /* Ensure proper spacing for print */
+  h1 {
+    font-size: 18pt !important;
+    margin-bottom: 12pt !important;
+  }
+
+  h2 {
+    font-size: 14pt !important;
+    margin-bottom: 8pt !important;
+  }
+
+  h3,
+  h4 {
+    font-size: 12pt !important;
+    margin-bottom: 6pt !important;
+  }
+
+  p,
+  li {
+    font-size: 10pt !important;
+    margin-bottom: 4pt !important;
+  }
+
+  /* Print grid adjustments */
+  .print\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  /* Print spacing adjustments */
+  .print\:gap-4 {
+    gap: 12pt !important;
+  }
+
+  .print\:mb-4 {
+    margin-bottom: 12pt !important;
   }
 }
