@@ -33,9 +33,11 @@ const RecipeBook = () => {
             <div className="flex justify-center text-sm text-gray-700 print:text-black space-x-4">
               <span className="font-semibold">Type: {recipe.type}</span>
               <span className="font-semibold">&nbsp;</span>
-              <span className="font-semibold">
-                Cook Time: {recipe.cookTime}
-              </span>
+              {recipe.cookTime && (
+                <span className="font-semibold">
+                  Cook Time: {recipe.cookTime}
+                </span>
+              )}
             </div>
           </div>
           {/* Recipe Content - Two Column Layout */}
@@ -106,7 +108,8 @@ const RecipeBook = () => {
           {/* Recipe Footer */}
           <div className="recipe-footer mt-6 pt-3 border-t border-gray-400 print:border-black text-center">
             <p className="text-xs text-gray-600 print:text-black">
-              {recipe.name} • {recipe.type} • {recipe.cookTime}
+              {recipe.name} • {recipe.type}
+              {recipe.cookTime ? ` • ${recipe.cookTime}` : ""}
             </p>
           </div>
         </div>

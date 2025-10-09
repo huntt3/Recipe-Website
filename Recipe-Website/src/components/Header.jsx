@@ -22,15 +22,6 @@ const Header = () => {
           </div>
         </div>
       </header>
-
-      {/* Print Header */}
-      <header className="hidden print:block print:text-center print:mb-8">
-        <h1 className="text-2xl font-bold text-black mb-2">
-          Recipe Collection
-        </h1>
-        <p className="text-sm text-black">A collection of favorite recipes</p>
-        <div className="border-b-2 border-black mt-4"></div>
-      </header>
     </>
   );
 };
