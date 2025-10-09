@@ -30,14 +30,14 @@ const RecipeBook = () => {
             <h2 className="text-2xl font-bold text-gray-800 print:text-black mb-2 print:text-xl">
               {recipe.name}
             </h2>
-            <div className="flex justify-center gap-6 text-sm text-gray-700 print:text-black">
+            <div className="flex justify-center text-sm text-gray-700 print:text-black space-x-4">
               <span className="font-semibold">Type: {recipe.type}</span>
+              <span className="font-semibold">&nbsp;</span>
               <span className="font-semibold">
                 Cook Time: {recipe.cookTime}
               </span>
             </div>
           </div>
-
           {/* Recipe Content - Two Column Layout */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 print:grid-cols-2 print:gap-8">
             {/* Ingredients Section */}
@@ -103,7 +103,6 @@ const RecipeBook = () => {
               </ol>
             </div>
           </div>
-
           {/* Recipe Footer */}
           <div className="recipe-footer mt-6 pt-3 border-t border-gray-400 print:border-black text-center">
             <p className="text-xs text-gray-600 print:text-black">

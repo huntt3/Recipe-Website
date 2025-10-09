@@ -22,10 +22,107 @@
       ]
     },
     {
+      "name": "Beef Stew",
+      "type": "Dinner",
+      "ingredients": [
+        "2 lbs. stew beef",
+        "1 can tomato soup",
+        "1 can cream of mushroom soup",
+        "1 can beef broth",
+        "1 can French onion soup",
+        "Potatoes",
+        "Carrots",
+        "Celery",
+        "1 small bag of peas, frozen",
+        "flour to taste"
+      ],
+      "optionalIngredients": ["2 bay leaves"],
+      "cookTime": "8 hours",
+      "instructions": [
+        "Combine all ingredients in slow cooker",
+        "Cook on low all day",
+        "Add peas 30 minutes before serving",
+        "Add flour to thicken to taste"
+      ]
+    },
+    {
+      "name": "Chicken & Broccoli Casserole",
+      "type": "Dinner",
+      "ingredients": [
+        "8 chicken breasts",
+        "2 cans cream of chicken soup",
+        "1 cup mayonnaise",
+        "1 cup shredded sharp cheddar",
+        "2 bag broccoli, frozen",
+        "1 large sleeve Ritz Cracker crumbs"
+      ],
+      "cookTime": "1 hour",
+      "instructions": [
+        "Preheat oven to 350° F",
+        "Cube chicken breast",
+        "Cook chicken",
+        "Mix soup, mayonnaise, and cheese",
+        "In casserole dish layer chicken, broccoli and soup mixture",
+        "Cook, covered at 350° F for 35 minutes"
+      ]
+    },
+    {
+      "name": "Fettuccini Alfredo",
+      "type": "Dinner",
+      "ingredients": [
+        "8 oz. fettuccini",
+        "1 stick butter",
+        "3/4 cup half & half",
+        "1/2 cup shredded parmesan cheese"
+      ],
+      "cookTime": "30 minutes",
+      "instructions": [
+        "Cook pasta per instruction, drain, and rinse",
+        "Melt butter on low with half & half for around 1 minute",
+        "Combine pasta with the butter mixture, add the cheese, then toss"
+      ]
+    },
+    {
+      "name": "Chili",
+      "type": "Dinner",
+      "ingredients": [
+        "1 lb. ground beef",
+        "1/2 onion, diced",
+        "1 can lite kidney beans",
+        "1 can diced tomatoes",
+        "1 can tomato sauce",
+        "1 teaspoon chili powder",
+        "1 tablespoon sugar",
+        "salt & pepper to taste"
+      ],
+      "cookTime": "1 hour",
+      "instructions": [
+        "Brown ground beef on low",
+        "Caramelize onions",
+        "Add other ingredients and cook"
+      ]
+    },
+    {
+      "name": "Watergate Salad",
+      "type": "Dinner",
+      "ingredients": [
+        "1 pistachio pudding box (small)",
+        "1 can crushed pineapple in natural juice",
+        "9 oz cool whip",
+        "1 cup miniature marshmallows",
+        "1/2 cup diced maraschino cherries"
+      ],
+      "instructions": [
+        "In bowl, mix together pineapple, juice and pudding mix",
+        "Fold in cool whip, marshmallows and cherries",
+        "Refrigerate"
+      ]
+    },
+    {
       "name": "Cheesecake",
       "type": "Dessert",
       "ingredients": [
-        "1 graham cracker crust",
+        "1 graham cracker crust (9 inch)",
         "1/2 cup sugar",
         "2 packages cream cheese",
         "2 eggs",
@@ -36,7 +133,7 @@
         "Beat cream cheese, eggs, sugar, vanilla.",
         "Pour into graham cracker crust",
         "Preheat oven to 350° F",
-        "Cook for 40 minutes",
+        "Bake for 40 minutes",
         "Refrigerate"
       ]
     }
